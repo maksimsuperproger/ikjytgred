@@ -1,0 +1,107 @@
+body {
+    font-family: "Lora","Arial",sans-serif;
+    margin: 0; 
+}
+.nav { 
+    text-decoration: none;
+    margin: 0 50px;
+    transition: all 1s;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: all 1s;
+}
+.nav:hover {
+    color: aqua;
+    transition: all 1s;
+    transform: scale(1.2)
+}
+.nav::after {
+    content: "";
+    position: absolute;
+    background-color: aqua;
+    left: 0;
+    top: 20px;
+    width: 100%;
+    height: 2px;
+    transform: scale(0);
+    transition: all 1s;
+}
+.nav:hover::after {
+     transform: scale(1);
+}
+nav {
+    display:flex;
+    background-image: url(image/dolifmp_image.jpg);
+    position: relative;
+    width: 100%;
+    z-index: 3;   
+    height: 100vh;
+    background-repeat: no-repeat;
+    background: cover;
+    background-size: 100%;
+    
+}
+nav::after {
+    content: "";
+    background-color: black;
+    position: absolute;
+    z-index: 4;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.80;
+   
+}
+.head {
+    display: flex;
+    width: 100%;
+    justify-content:space-around;
+    z-index: 100;
+    margin: 16 0;
+    padding: 0;
+    background-attachment: fixed;
+    position: absolute;
+    z-index: 100;
+}
+h1 {
+    text-align: center;
+    position: absolute;
+    z-index: 1000000;
+    font-size: 50px;
+    bottom: -50px;
+    left: 55%;
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+}
+nav {
+    display: fixed;
+}
+.img {
+height: 250px;
+margin: 0 20;
+
+z-index: 10000;
+position: relative;
+border-style: double;
+border-color: aqua;
+}
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    position: relative;
+}
+.this-page {
+    color: aqua;
+}
+.ul-img {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 350;
+    max-width: 100vh; /* Установите максимальную ширину на 100% */
+    
+}
